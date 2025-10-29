@@ -5,8 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "any-llm-sdk",
     "jupyter>=1.1.1",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
+    "prompt4py>=0.0.5",
+    "python-dotenv>=1.2.1",
     "vortezwohl>=0.0.17",
 ]
+
+[tool.uv.sources]
+any-llm-sdk = { git = "https://gitlab.changdu.ltd/060270/any-llm-sdk.git", rev = "master" }
